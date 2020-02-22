@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Netfine Agencja Interaktywna`,
+    description: `Stworzymy dla Ciebie stronę internetową, zaprojektujemy logo, przygotujemy kampanię marketingową. Z przyjemnością zadbamy o Twoj wizerunek w sieci.`,
+    author: `Netfine`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,6 +13,30 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-transition-link`,
+    {
+      resolve: 'gatsby-plugin-page-progress',
+      options: {
+        includePaths: [],
+        // excludePaths: [],
+        height: 3,
+        prependToBody: false,
+        color: `#000000`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Poppins`,
+            subsets: [`latin`, `latin-ext`],
+            variants: [`600`, `800`, `900`],
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -21,8 +45,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },

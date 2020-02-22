@@ -1,0 +1,15 @@
+@import './variables.scss';
+@import './fonts.scss';
+@import './navbar.scss';
+@import './footer.scss';
+@import './loader.scss';
+@import './arrow.scss';
+@import './btn.scss';
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    outline-color: $primary-color;
+}

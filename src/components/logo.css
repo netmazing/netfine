@@ -1,0 +1,28 @@
+.st0 {
+    fill: #aa0010;
+}
+
+.st1 {
+    fill: #000;
+}
+
+.st2 {
+    fill: #000;
+}
+
+.menu-logo {
+    padding: 0;
+    display: block;
+}
+
+.menu-logo svg {
+    display: block;
+    width: 140px;
+    /* margin: 10px; */
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .menu-logo {
+        padding: 6px 12px;
+    }
+}

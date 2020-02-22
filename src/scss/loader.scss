@@ -1,0 +1,83 @@
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    z-index: 20;
+    padding: 0 10%;
+    animation: loader-exit .4s forwards;
+    animation-delay: 4s;
+    // transform: scaleY(0);
+    transform-origin: top;
+    @media(min-width: 600px) {
+        padding: 0 15%;
+    }
+    @media(min-width: 1024px) {
+        padding: 0 30%;
+    }
+}
+
+.loader__logo {
+    transform-origin: top;
+    animation: loader-logo-exit .4s forwards;
+    animation-delay: 3.6s;
+}
+
+.st3 {
+    fill:none;
+    stroke:#fff;
+    stroke-width:5;
+    stroke-miterlimit:10;
+    animation: loader-logo-animation 2.6s cubic-bezier(0, 0.23, 1, .1) forwards;
+}
+
+@keyframes loader-logo-animation {
+    0% {
+        fill: none;
+        stroke-dasharray: 800;
+        stroke-dashoffset: 900;
+    }
+
+    10% {
+        fill: none;
+        stroke-dasharray: 800;
+        stroke-dashoffset: 900;
+    }
+
+    95% {
+        fill: rgba(255, 255, 255, 0);
+        stroke-dasharray: 800;
+    }
+
+    100% {
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 800;
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes loader-logo-exit {
+    from {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    to {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes loader-exit {
+    from {
+        transform: scaleY(1)
+    }
+    to {
+        transform: scaleY(0)
+    }
+}
+

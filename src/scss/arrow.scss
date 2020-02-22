@@ -1,0 +1,55 @@
+.arrow-right, .arrow-left {
+    width: 40px;
+}
+
+.arrow-down, .arrow-up {
+    height: 40px;
+}
+
+.arrow-down {
+    transform: rotate(180deg);
+}
+
+.hero .arrow-down {
+    margin-top: 20px;
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 0;
+    animation: hero-arrow-animation 3s infinite;
+    animation-delay: 5.2s;
+    @media(min-width: 360px) {
+        margin-top: 40px;
+    }
+}
+
+@keyframes hero-arrow-animation {
+    0% {
+        transform: translateY(-50%) rotate(180deg);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(-50%) rotate(180deg);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(0) rotate(180deg);
+        opacity: 1;
+    }
+
+    75%{
+        transform: translateY(0) rotate(180deg);
+        opacity: 1;
+    }
+
+
+    90% {
+        transform: translateY(50%) rotate(180deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(50%) rotate(180deg);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,231 @@
+@import './variables.scss';
+
+// HAMBURGER
+
+.hamburger {
+    display: inline-block;
+    padding: 12px 8px 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.hamburger__box {
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    height: 25px;
+}
+
+.hamburger__inner,
+.hamburger__inner::before,
+.hamburger__inner::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $dark-color;
+    transition: transform .2s; 
+}
+
+.hamburger__inner {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger__inner::before, .hamburger__inner::after {
+    content: '';
+}
+
+.hamburger__inner::before {
+    top: -10px;
+}
+
+.hamburger__inner::after {
+    top: 10px;
+}
+
+.hamburger--open .hamburger__inner,
+.hamburger.hamburger--open:focus .hamburger__inner {
+    background-color: transparent;
+}
+
+.hamburger--open .hamburger__inner:before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger--open .hamburger__inner:after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+// MENU HEADER
+
+.menu-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+// MENU LIST
+
+.menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .4s;
+    transition-delay: .4s;
+    z-index: 9;
+    &__item {
+        transform: scaleY(0);
+        opacity: 0;
+        transform-origin: top;
+        transition: transform .2s, opacity .2s;
+    }
+    &__item:nth-of-type(1) {
+        transition-delay: 0s;
+    }
+    &__item:nth-of-type(2) {
+        transition-delay: .1s;
+    }
+    &__item:nth-of-type(3) {
+        transition-delay: .2s;
+    }
+    &__item:nth-of-type(4) {
+        transition-delay: .3s;
+    }
+}
+
+.menu-list--open {
+    transform: scaleX(1);
+    transition-delay: .0s;
+    .menu-list__item {
+        transform: scaleY(1);
+        opacity: 1;
+        transform-origin: bottom;
+    }
+    .menu-list__item:nth-of-type(1) {
+        transition-delay: .4s;
+    }
+    .menu-list__item:nth-of-type(2) {
+        transition-delay: .5s;
+    }
+    .menu-list__item:nth-of-type(3) {
+        transition-delay: .6s;
+    }
+    .menu-list__item:nth-of-type(4) {
+        transition-delay: .7s;
+    }
+}
+
+.menu-link {
+    // display: flex;
+    // flex-direction: row-reverse;
+    position: relative;
+    margin: .5em 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    .arrow-right {
+        position: absolute;
+        top: 50%;
+        // left: 105%;
+        right: 0;
+        transform: translate(0, -50%) scaleX(0);
+        transform-origin: left;
+        opacity: 0;
+        transition: all .3s;
+        @media(min-width: 1024px) and (orientation: landscape) {
+            top: 100%;
+            right: auto;
+            left: 50%;
+            transform: translate(-100%, -50%) scaleX(0);
+        }
+    }
+}
+.menu-link:focus {
+    outline: none;
+}
+.menu-link:hover .arrow-right,
+.menu-link:focus .arrow-right {
+    outline: none;
+    transform: translate(105%, -50%) scaleX(1);
+    opacity: 1;
+}
+@media(min-width: 1024px) and (orientation: landscape) {
+    .menu-link:hover .arrow-right,
+    .menu-link:focus .arrow-right {
+    outline: none;
+    transform: translate(-50%, -50%) scaleX(1);
+    opacity: 1;
+}
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 30px;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .menu-header {
+        position: relative;
+        width: auto;
+        padding: 0;
+    }
+
+    .menu-list {
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: auto;
+        transform: none;
+        padding: 0;
+        background-color: transparent;
+        &__item {
+            background-color: transparent;
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    .menu-link {
+        margin: 0 14px;
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

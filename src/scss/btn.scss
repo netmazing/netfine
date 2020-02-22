@@ -1,0 +1,22 @@
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 6px 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    img {
+        transition: .3s;
+    }
+}
+
+.btn:hover .arrow-right, .btn:focus .arrow-right {
+    transform: translateX(14px)
+}
+.btn:hover .arrow-left, .btn:focus .arrow-left {
+    transform: translateX(-14px)
+}

@@ -29,7 +29,6 @@ const Navbar = () => {
                   <li className="menu-list__item" key={index}>
                     <AniLink
                       className="menu-link"
-                      activeClassName="menu-link--active"
                       cover
                       to={link.path}
                       direction="left"

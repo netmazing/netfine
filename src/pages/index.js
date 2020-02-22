@@ -98,7 +98,7 @@ const IndexPage = () => (
                   bg='#000'
                 >
                   Współpraca
-                  {/* <img className="arrow-right" src={ArrowRight} alt="Zapytaj o współpracę. Strony www, materiały promocyjne, reklama online."/> */}
+                  <img className="arrow-right" src={ArrowRight} alt="Zapytaj o współpracę. Strony www, materiały promocyjne, reklama online."/>
                 </AniLink>
             </Fade>
           </section>

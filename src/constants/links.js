@@ -1,9 +1,5 @@
 export default [
     {
-        path: '/',
-        name: 'start',
-    },
-    {
         path: '/oferta',
         name: 'oferta',
     },

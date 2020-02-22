@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import Loader from '../components/Loader';
 import {Parallax} from 'react-parallax';
 import Fade from 'react-reveal/Fade';

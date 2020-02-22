@@ -2,7 +2,6 @@ import React from "react";
 
 const LoaderLogo = ({
   style = {},
-//   fill = "#fff",
   width = "100%",
   className = "",
   viewBox = "0 0 1358 242"

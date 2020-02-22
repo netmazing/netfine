@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-// import "../css/navbar.css";
 import links from '../constants/links';
 import Logo from './Logo';
 import ArrowRight from '../svg/arrow-right.svg';

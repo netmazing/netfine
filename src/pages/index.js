@@ -24,7 +24,7 @@ const IndexPage = () => (
       
       <main className="page">
         <h1 className="hidden">Netfine Agencja Interaktywna</h1>
-        <Parallax bgImage={Img1} strength={400}>
+        <Parallax bgImage={Img1} strength={300}>
           <header className="hero">
             <h2 className="title hero__title">Stwórzmy coś fascynującego</h2>
             <p className="text hero__text">Pragniemy otworzyć przed Tobą nowe możliwości w osiąganiu celów. Uruchomimy dla Ciebie stronę internetową, zaprojektujemy logo, przeprowadzimy kampanię reklamową w internecie. Z przyjemnością zadbamy o Twój wirtualny wizerunek.</p>
@@ -32,7 +32,7 @@ const IndexPage = () => (
           </header>
         </Parallax>
 
-        <Parallax bgImage={Img2} strength={400}>
+        <Parallax bgImage={Img2} strength={300}>
           <section className="section parallax parallax1">
             <Fade bottom>
               <h2 className="section__title subtitle">Skuteczna reklama w sieci</h2>
@@ -56,7 +56,7 @@ const IndexPage = () => (
           </section>
         </Parallax>
 
-        <Parallax bgImage={Img3} strength={400}>
+        <Parallax bgImage={Img3} strength={300}>
           <section className="section parallax parallax2">
             <Fade bottom>
               <h2 className="section__title subtitle">Doświadczenie</h2>
@@ -80,7 +80,7 @@ const IndexPage = () => (
           </section>
         </Parallax>
 
-        <Parallax bgImage={Img4} strength={400}>
+        <Parallax bgImage={Img4} strength={300}>
           <section className="section parallax parallax3">
             <Fade bottom>
               <h2 className="section__title subtitle">Daj się zauważyć</h2>

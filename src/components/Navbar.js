@@ -4,7 +4,6 @@ import links from '../constants/links';
 import Logo from './Logo';
 import ArrowRight from '../svg/arrow-right.svg';
 
-
 const Navbar = () => {
   const [isOpen, setNav] = useState(false);
   const toggleNav = () => {

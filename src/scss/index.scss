@@ -1,5 +1,9 @@
 @import './variables.scss';
 
+.page {
+    position: relative;
+}
+
 .hero .title,
 .hero .text,
 .parallax .subtitle,
@@ -17,6 +21,7 @@
 
 .hero {
     min-height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +30,7 @@
 }
 
 .parallax {
+    position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -39,11 +45,11 @@
 }
 
 .parallax2 {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.65);
 }
 
 .parallax3 {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .hero__title {
@@ -93,3 +99,83 @@
         opacity: 1;
     }
 }
+
+// Ilustrations
+
+// .ilustration1 {
+//     position: absolute;
+//     width: 60px;
+//     top: 105vh;
+//     left: 0;
+//     transform: translateX(-40%);
+//     @media (max-width: 830px) and (orientation: landscape) {
+//         top: 145vh;
+//     }
+//     @media(min-width:360px) {
+//         width: 80px;
+//     }
+//     @media(min-width:600px) {
+//         width: 120px;
+//     }
+//     @media(min-width:1024px) {
+//         width: 160px;
+//         top: 108vh;
+//     }
+// }
+
+// .ilustration2 {
+//     position: absolute;
+//     width: 40px;
+//     top: 200vh;
+//     right: 0;
+//     transform: translate(2%, -50%);
+//     @media (max-width: 830px) and (orientation: landscape) {
+//         top: 280vh;
+//     }
+//     @media(min-width:360px) {
+//         width: 60px;
+//     }
+//     @media(min-width:600px) {
+//         width: 80px;
+//     }
+//     @media(min-width:1024px) {
+//         width: 110px;
+//     }
+// }
+
+// .ilustration3 {
+//     position: absolute;
+//     width: 40px;
+//     top: 300vh;
+//     left: 0;
+//     transform: translate(0, -50%);
+//     @media (max-width: 830px) and (orientation: landscape) {
+//         top: 420vh;
+//     }
+//     @media(min-width:360px) {
+//         width: 60px;
+//     }
+//     @media(min-width:600px) {
+//         width: 80px;
+//     }
+//     @media(min-width:1024px) {
+//         width: 110px;
+//     }
+// }
+
+// .ilustration4 {
+//     position: absolute;
+//     width: 60px;
+//     bottom: 10vh;
+//     right: 0;
+//     transform: translateX(40%);
+//     @media(min-width:360px) {
+//         width: 80px;
+//     }
+//     @media(min-width:600px) {
+//         width: 120px;
+//     }
+//     @media(min-width:1024px) {
+//         width: 160px;
+//     }
+// }

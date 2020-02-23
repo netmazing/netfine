@@ -10,8 +10,8 @@ import '../scss/arrow.scss';
 
 import Img1 from '../images/bg-images/bg2.jpg';
 import Img2 from '../images/bg-images/hero-bg.jpg';
-import Img3 from '../images/bg-images/bg4.jpg';
-import Img4 from '../images/bg-images/bg5.jpg';
+import Img3 from '../images/bg-images/bg5.jpg';
+import Img4 from '../images/bg-images/bg4.jpg';
 
 import ArrowDown from '../svg/arrow-down.svg';
 import ArrowRight from '../svg/arrow-right.svg';
@@ -24,7 +24,7 @@ const IndexPage = () => (
       
       <main className="page">
         <h1 className="hidden">Netfine Agencja Interaktywna</h1>
-        <Parallax bgImage={Img1} strength={300}>
+        <Parallax bgImage={Img1} strength={500}>
           <header className="hero">
             <h2 className="title hero__title">Stwórzmy coś fascynującego</h2>
             <p className="text hero__text">Pragniemy otworzyć przed Tobą nowe możliwości w osiąganiu celów. Uruchomimy dla Ciebie stronę internetową, zaprojektujemy logo, przeprowadzimy kampanię reklamową w internecie. Z przyjemnością zadbamy o Twój wirtualny wizerunek.</p>

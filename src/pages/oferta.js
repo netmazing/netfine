@@ -1,9 +1,45 @@
 import React from "react";
 import Layout from '../components/layout';
 
+import IllustrationWebDevelopment from '../svg/illustration-web-development.svg';
+import IllustrationBranding from '../svg/illustration-branding.svg';
+import IllustrationMarketing from '../svg/illustration-marketing.svg';
+
 const Offer = () => (
   <Layout>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam enim dolore sunt qui, reprehenderit magni velit nihil omnis quis eveniet modi illum laborum placeat debitis recusandae impedit voluptatum corporis pariatur asperiores quaerat amet quas? Neque accusantium suscipit laborum corrupti pariatur voluptatem unde ipsa repellendus voluptatibus omnis. Saepe obcaecati culpa ducimus repellat iure officia assumenda a enim ea fugit necessitatibus cupiditate dolorum provident suscipit aspernatur fuga, quaerat est distinctio sapiente! Sit voluptatem sed perspiciatis nulla veniam aperiam atque quas nihil reiciendis rerum cum officiis obcaecati explicabo itaque, officia maiores facilis optio provident. Rem officiis debitis unde at laborum quam! Libero, officiis?</div>
+    <main className="page offer-page">
+      <h1 className="hidden">Oferta</h1>
+      <section className="section offer">
+        <div className="offer__wrapper">
+          <h2 className="subtitle">Strony internetowe</h2>
+          <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consectetur molestiae optio, ratione adipisci rerum nobis earum quam doloribus repellendus?</p>
+        </div>
+        <div className="offer__illustration">
+          <img className="illustration illustrationWD" src={IllustrationWebDevelopment} alt="responsywne strony internetowe, dostosowane do różnych rozdzielczości i urządzeń mobilnych"/>
+        </div>
+      </section>
+
+      <section className="section offer">
+        <div className="offer__wrapper">
+          <h2 className="subtitle">Identyfikacja wizualna</h2>
+          <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consectetur molestiae optio, ratione adipisci rerum nobis earum quam doloribus repellendus?</p>
+        </div>
+        <div className="offer__illustration">
+          <img className="illustration illustrationB" src={IllustrationBranding} alt="projekty logo, materiały promocyjne, plakaty, ulotki, wizytówki"/>
+        </div>
+      </section>
+
+      <section className="section offer">
+        <div className="offer__wrapper">
+          <h2 className="subtitle">Markeing w sieci</h2>
+          <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consectetur molestiae optio, ratione adipisci rerum nobis earum quam doloribus repellendus?</p>
+        </div>
+        <div className="offer__illustration">
+          <img className="illustration illustrationM" src={IllustrationMarketing} alt="marketing internetowy, google ads, facebook ads, social media, pozycjonowanie stron"/>
+        </div>
+      </section>
+    </main>
+    
   </Layout>
   
 )

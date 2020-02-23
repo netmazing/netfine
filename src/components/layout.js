@@ -4,7 +4,6 @@ import Footer from './Footer';
 import './logo.css';
 import '../scss/layout.scss';
 
-
 const Layout = ({children}) => {
     return (
         <>

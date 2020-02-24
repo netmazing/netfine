@@ -7,17 +7,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #000;
     z-index: 20;
-    padding: 0 20%;
-    animation: internal-loader-exit .4s forwards;
-    animation-delay: 3.7s;
+    padding: 0 25%;
+    animation: internal-loader-exit .5s forwards;
+    animation-delay: 3.4s;
     transform-origin: left;
     @media(min-width: 600px) {
-        padding: 0 25%;
+        padding: 0 30%;
     }
     @media(min-width: 1024px) {
-        padding: 0 35%;
+        padding: 0 40%;
     }
 }
 @keyframes internal-loader-exit {
@@ -33,7 +33,7 @@
 .internal-loader__icon {
     transform-origin: left;
     animation: loader-icon-exit .4s forwards;
-    animation-delay: 3.3s;
+    animation-delay: 3s;
 }
 @keyframes loader-icon-exit {
     from {
@@ -46,20 +46,20 @@
     }
 }
 
-.icon-offer-path {
+.icon-offer-path,
+.icon-customers-path,
+.icon-contact-path {
     fill:none;
-    stroke:#000;
-    stroke-width:4;
+    stroke:#fff;
+    stroke-width:6;
     stroke-miterlimit:10;
+}
+
+.icon-offer-path {
     stroke-dasharray: 4500;
     stroke-dashoffset: 4500;
     animation: icon-offer-animation 2s cubic-bezier(.6,.01,1,.3) forwards;
-    animation-delay: .3s;
 }
-
-
-
-
 @keyframes icon-offer-animation {
     0% {
         fill: none;
@@ -67,20 +67,209 @@
         stroke-dashoffset: 4500;
     }
 
-    // 10% {
-    //     fill: none;
-    //     stroke-dasharray: 4500;
-    //     stroke-dashoffset: 4500;
-    // }
-
     95% {
-        fill: rgba(0, 0, 0, 0);
+        fill: rgba(255, 255, 255, 0);
         stroke-dasharray: 4500;
     }
 
     100% {
-        fill: rgba(0, 0, 0, 1);
+        fill: rgba(255, 255, 255, 1);
         stroke-dasharray: 4500;
+        stroke-dashoffset: 0;
+    }
+}
+
+.icon-customers-path {
+    stroke-dasharray: 1100;
+    stroke-dashoffset: 1100;
+    animation: icon-customers-animation 2s cubic-bezier(.06,.16,1,.21) forwards;
+}
+.icon-customers-path:nth-of-type(3),
+.icon-customers-path:nth-of-type(4) {
+    stroke-dasharray: 1100;
+    stroke-dashoffset: 1100;
+    animation: icon-customers-animation2 2s cubic-bezier(.06,.16,1,.21) forwards;
+}
+.icon-customers-path:nth-of-type(5),
+.icon-customers-path:nth-of-type(6) {
+    stroke-dasharray: 1100;
+    stroke-dashoffset: 1100;
+    animation: icon-customers-animation3 2s cubic-bezier(.06,.16,1,.21) forwards;
+}
+@keyframes icon-customers-animation {
+    0% {
+        fill: none;
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 1100;
+    }
+
+    95% {
+        fill: rgba(255, 255, 255, 0);
+        stroke-dasharray: 1100;
+    }
+
+    100% {
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes icon-customers-animation2 {
+    0% {
+        fill: none;
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 1100;
+    }
+
+    40% {
+        fill: none;
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 1100;
+    }
+
+    95% {
+        fill: rgba(255, 255, 255, 0);
+        stroke-dasharray: 1100;
+    }
+
+    100% {
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes icon-customers-animation3 {
+    0% {
+        fill: none;
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 1100;
+    }
+
+    20% {
+        fill: none;
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 1100;
+    }
+
+    95% {
+        fill: rgba(255, 255, 255, 0);
+        stroke-dasharray: 1100;
+    }
+
+    100% {
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 0;
+    }
+}
+
+.icon-contact-path {
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: icon-contact-animation 2s cubic-bezier(.06,.16,1,.21) forwards;
+}
+.icon-contact-path:nth-of-type(2) {
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: icon-contact-animation2 2s cubic-bezier(.06,.16,1,.21) forwards;
+}
+.icon-contact-path:nth-of-type(3) {
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: icon-contact-animation3 2s cubic-bezier(.06,.16,1,.21) forwards;
+}
+.icon-contact-path:nth-of-type(4) {
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: icon-contact-animation4 2s cubic-bezier(.06,.16,1,.21) forwards;
+}
+@keyframes icon-contact-animation {
+    0% {
+        fill: none;
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 2300;
+    }
+
+    95% {
+        fill: rgba(255, 255, 255, 0);
+        stroke-dasharray: 2300;
+    }
+
+    100% {
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes icon-contact-animation2 {
+    0% {
+        fill: none;
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 2300;
+    }
+
+    10% {
+        fill: none;
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 2300;
+    }
+
+    95% {
+        fill: rgba(255, 255, 255, 0);
+        stroke-dasharray: 2300;
+    }
+
+    100% {
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes icon-contact-animation3 {
+    0% {
+        fill: none;
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 2300;
+    }
+
+    20% {
+        fill: none;
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 2300;
+    }
+
+    95% {
+        fill: rgba(255, 255, 255, 0);
+        stroke-dasharray: 2300;
+    }
+
+    100% {
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes icon-contact-animation4 {
+    0% {
+        fill: none;
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 2300;
+    }
+
+    40% {
+        fill: none;
+        stroke-dasharray: 2300;
+        stroke-dashoffset: 2300;
+    }
+
+    95% {
+        fill: rgba(255, 255, 255, 0);
+        stroke-dasharray: 2300;
+    }
+
+    100% {
+        fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 2300;
         stroke-dashoffset: 0;
     }
 }

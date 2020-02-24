@@ -32,7 +32,7 @@ const Navbar = () => {
                       cover
                       to={link.path}
                       direction="left"
-                      duration={1}
+                      duration={1.5}
                       bg='#000'
                       >
                       <img className="arrow-right" src={ArrowRight} alt="Przejdź do podstrony"/>{link.name}

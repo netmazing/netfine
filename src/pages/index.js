@@ -17,7 +17,9 @@ import ArrowDown from '../svg/arrow-down.svg';
 import ArrowRight from '../svg/arrow-right.svg';
 
 
-const IndexPage = () => (
+const IndexPage = () => {
+  const transtionTime = 1.5;
+  return (
     <Layout>
 
       <Loader/>
@@ -46,7 +48,7 @@ const IndexPage = () => (
                   cover
                   to="/oferta"
                   direction="left"
-                  duration={2}
+                  duration={transtionTime}
                   bg='#000'
                 >
                   Oferta
@@ -70,7 +72,7 @@ const IndexPage = () => (
                   cover
                   to="/klienci"
                   direction="left"
-                  duration={2}
+                  duration={transtionTime}
                   bg='#000'
                 >
                   Klienci
@@ -94,7 +96,7 @@ const IndexPage = () => (
                   cover
                   to="/kontakt"
                   direction="left"
-                  duration={2}
+                  duration={transtionTime}
                   bg='#000'
                 >
                   Współpraca
@@ -107,6 +109,6 @@ const IndexPage = () => (
        </main>
        
     </Layout>
-)
+)}
 
 export default IndexPage

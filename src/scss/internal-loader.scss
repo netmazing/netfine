@@ -80,85 +80,85 @@
 }
 
 .icon-customers-path {
-    stroke-dasharray: 1100;
-    stroke-dashoffset: 1100;
+    stroke-dasharray: 1150;
+    stroke-dashoffset: 1150;
     animation: icon-customers-animation2 2s cubic-bezier(.06,.16,1,.21) forwards;
 }
 .icon-customers-path:nth-of-type(3),
 .icon-customers-path:nth-of-type(4) {
-    stroke-dasharray: 1100;
-    stroke-dashoffset: 1100;
+    stroke-dasharray: 1150;
+    stroke-dashoffset: 1150;
     animation: icon-customers-animation 2s cubic-bezier(.06,.16,1,.21) forwards;
 }
 .icon-customers-path:nth-of-type(5),
 .icon-customers-path:nth-of-type(6) {
-    stroke-dasharray: 1100;
-    stroke-dashoffset: 1100;
+    stroke-dasharray: 1150;
+    stroke-dashoffset: 1150;
     animation: icon-customers-animation3 2s cubic-bezier(.06,.16,1,.21) forwards;
 }
 @keyframes icon-customers-animation {
     0% {
         fill: none;
-        stroke-dasharray: 1100;
-        stroke-dashoffset: 1100;
+        stroke-dasharray: 1150;
+        stroke-dashoffset: 1150;
     }
 
     95% {
         fill: rgba(255, 255, 255, 0);
-        stroke-dasharray: 1100;
+        stroke-dasharray: 1150;
     }
 
     100% {
         fill: rgba(255, 255, 255, 1);
-        stroke-dasharray: 1100;
+        stroke-dasharray: 1150;
         stroke-dashoffset: 0;
     }
 }
 @keyframes icon-customers-animation2 {
     0% {
         fill: none;
-        stroke-dasharray: 1100;
-        stroke-dashoffset: 1100;
+        stroke-dasharray: 1150;
+        stroke-dashoffset: 1150;
     }
 
     40% {
         fill: none;
-        stroke-dasharray: 1100;
-        stroke-dashoffset: 1100;
+        stroke-dasharray: 1150;
+        stroke-dashoffset: 1150;
     }
 
     95% {
         fill: rgba(255, 255, 255, 0);
-        stroke-dasharray: 1100;
+        stroke-dasharray: 1150;
     }
 
     100% {
         fill: rgba(255, 255, 255, 1);
-        stroke-dasharray: 1100;
+        stroke-dasharray: 1150;
         stroke-dashoffset: 0;
     }
 }
 @keyframes icon-customers-animation3 {
     0% {
         fill: none;
-        stroke-dasharray: 1100;
-        stroke-dashoffset: 1100;
+        stroke-dasharray: 1150;
+        stroke-dashoffset: 1150;
     }
 
     20% {
         fill: none;
-        stroke-dasharray: 1100;
-        stroke-dashoffset: 1100;
+        stroke-dasharray: 1150;
+        stroke-dashoffset: 1150;
     }
 
     95% {
         fill: rgba(255, 255, 255, 0);
-        stroke-dasharray: 1100;
+        stroke-dasharray: 1150;
     }
 
     100% {
         fill: rgba(255, 255, 255, 1);
-        stroke-dasharray: 1100;
+        stroke-dasharray: 1150;
         stroke-dashoffset: 0;
     }
 }

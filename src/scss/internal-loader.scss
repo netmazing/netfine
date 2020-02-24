@@ -82,13 +82,13 @@
 .icon-customers-path {
     stroke-dasharray: 1100;
     stroke-dashoffset: 1100;
-    animation: icon-customers-animation 2s cubic-bezier(.06,.16,1,.21) forwards;
+    animation: icon-customers-animation2 2s cubic-bezier(.06,.16,1,.21) forwards;
 }
 .icon-customers-path:nth-of-type(3),
 .icon-customers-path:nth-of-type(4) {
     stroke-dasharray: 1100;
     stroke-dashoffset: 1100;
-    animation: icon-customers-animation2 2s cubic-bezier(.06,.16,1,.21) forwards;
+    animation: icon-customers-animation 2s cubic-bezier(.06,.16,1,.21) forwards;
 }
 .icon-customers-path:nth-of-type(5),
 .icon-customers-path:nth-of-type(6) {

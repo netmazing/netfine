@@ -1,5 +1,8 @@
 import React from "react";
 import Layout from '../components/layout';
+import LoaderOffer from '../components/LoaderOffer';
+import '../scss/offer.scss';
+import '../scss/internal-loader.scss';
 
 import IllustrationWebDevelopment from '../svg/illustration-web-development.svg';
 import IllustrationBranding from '../svg/illustration-branding.svg';
@@ -7,6 +10,7 @@ import IllustrationMarketing from '../svg/illustration-marketing.svg';
 
 const Offer = () => (
   <Layout>
+    <LoaderOffer/>
     <main className="page offer-page">
       <h1 className="hidden">Oferta</h1>
       <section className="section offer">

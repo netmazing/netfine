@@ -1,7 +1,7 @@
 import React from 'react';
 import LoaderLogo from './LoaderLogo';
 
-const Footer = () => {
+const Loader = () => {
     return (
         <div className="loader">
             <LoaderLogo className="loader__logo"/>
@@ -9,4 +9,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Loader

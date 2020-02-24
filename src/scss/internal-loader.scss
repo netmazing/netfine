@@ -1,0 +1,86 @@
+.internal-loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    z-index: 20;
+    padding: 0 20%;
+    animation: internal-loader-exit .4s forwards;
+    animation-delay: 3.7s;
+    transform-origin: left;
+    @media(min-width: 600px) {
+        padding: 0 25%;
+    }
+    @media(min-width: 1024px) {
+        padding: 0 35%;
+    }
+}
+@keyframes internal-loader-exit {
+    from {
+        transform: scaleX(1)
+    }
+    to {
+        transform: scaleX(0)
+    }
+}
+
+
+.internal-loader__icon {
+    transform-origin: left;
+    animation: loader-icon-exit .4s forwards;
+    animation-delay: 3.3s;
+}
+@keyframes loader-icon-exit {
+    from {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    to {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+}
+
+.icon-offer-path {
+    fill:none;
+    stroke:#000;
+    stroke-width:4;
+    stroke-miterlimit:10;
+    stroke-dasharray: 4500;
+    stroke-dashoffset: 4500;
+    animation: icon-offer-animation 2s cubic-bezier(.6,.01,1,.3) forwards;
+    animation-delay: .3s;
+}
+
+
+
+
+@keyframes icon-offer-animation {
+    0% {
+        fill: none;
+        stroke-dasharray: 4500;
+        stroke-dashoffset: 4500;
+    }
+
+    // 10% {
+    //     fill: none;
+    //     stroke-dasharray: 4500;
+    //     stroke-dashoffset: 4500;
+    // }
+
+    95% {
+        fill: rgba(0, 0, 0, 0);
+        stroke-dasharray: 4500;
+    }
+
+    100% {
+        fill: rgba(0, 0, 0, 1);
+        stroke-dasharray: 4500;
+        stroke-dashoffset: 0;
+    }
+}

@@ -57,7 +57,7 @@
     transform: translateY(50%);
     transform-origin: bottom;
     opacity: 0;
-    animation: hero-title-animation .4s forwards;
+    animation: text-animation 1s ease-out forwards;
     animation-delay: 4.4s;
     @media(min-width: 600px) {
         margin-top: 80px;
@@ -65,40 +65,26 @@
 }
 
 .hero__text {
-    transform: translateY(50%);
-    transform-origin: bottom;
+    transform: translateY(100%);
+    // transform-origin: bottom;
     opacity: 0;
-    animation: hero-text-animation .4s forwards;
+    animation: text-animation 1s ease-out forwards;
     animation-delay: 4.8s;
 }
 
-@keyframes hero-title-animation {
-    0% {
-        transform: translateY(50%) scaleY(0);
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0) scaleY(1);
-        opacity: 1;
-    }
-}
-
-@keyframes hero-text-animation {
-    0% {
-        transform: translateY(50%) scaleY(0);
-        opacity: 0;
-    }
-    40% {
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0) scaleY(1);
-        opacity: 1;
-    }
-}
+// @keyframes hero-text-animation {
+//     0% {
+//         transform: translateY(50%) scaleY(0);
+//         opacity: 0;
+//     }
+//     40% {
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateY(0) scaleY(1);
+//         opacity: 1;
+//     }
+// }
 
 // Ilustrations
 

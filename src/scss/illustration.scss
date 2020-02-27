@@ -1,0 +1,27 @@
+.offer__illustration,
+.contact-page__illustration {
+    width: 100%;
+    text-align: center;
+    @media(min-width: 1024px) {
+        width: 50%;
+    }
+}
+
+.illustration {
+    width: 60%;
+    margin: 40px 0 0;
+    @media(min-width: 768px) {
+        width: 50%;
+    }
+    @media(min-width: 1024px) {
+        width: 60%;
+    }
+}
+
+.illustrationWD,
+.illustrationC {
+    transform: translateX(120%);
+    opacity: 0;
+    animation: illustration-animation 1s ease-out forwards;
+    animation-delay: 3.8s;
+}

@@ -1,0 +1,115 @@
+@import './variables.scss';
+
+.contact-page {
+    margin: 0 auto;
+    padding: 20vh 10px 2vh;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media(min-width: 768px) {
+        padding: 20vh 30px 2vh;
+    }
+    @media(min-width: 1024px) {
+        flex-direction: row;
+    }
+}
+
+.contact-page__wrapper {
+    @media(min-width: 1024px) {
+        width: 50%;
+    }
+}
+
+.contact-title,
+.contact-text,
+.contact {
+    margin: 20px auto;
+    width: 100%;
+    @media(min-width: 600px) {
+        width: 100%;
+    }
+    @media(min-width: 1024px) {
+        width: 80%;
+        margin: 20px 50px;
+        text-align: left;
+    }
+}
+
+.contact-title {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: text-animation 1s ease-out forwards;
+    animation-delay: 3.8s;
+}
+
+.contact {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: text-animation 1s ease-out forwards;
+    animation-delay: 4.2s;
+}
+
+// .contact-text {
+//     transform: translateY(100%);
+//     opacity: 0;
+//     animation: text-animation 1s ease-out forwards;
+//     animation-delay: 4.2s;
+// }
+
+.contact-subtitle {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 20px;
+    margin-top: 40px;
+    // text-transform: uppercase;
+    // span {
+    //     display: block;
+    //     font-size: 18px;
+    //     text-transform: capitalize;
+    // }
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__wrapper {
+        margin: 12px 0 0;
+        * {
+            margin: 0;
+            text-align: center;
+            font-style: normal;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .contact-subtitle {
+        text-align: left;
+        line-height: 1.2;
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    .contact-box {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        &__wrapper {
+            margin: 14px 0 0;
+            * {
+                margin: 6px 0;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.contact-link {
+    transition: color .3s;
+    &:hover {
+        color: $primary-color;
+    }
+}

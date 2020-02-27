@@ -1,19 +1,19 @@
 @import './variables.scss';
 
 .offer-page {
-    padding: 10vh 0 15vh 0;
+    padding: 10vh 0 10vh 0;
     margin: 0 auto;
     max-width: 1280px;
 }
 
 .offer {
-    padding: 10vh 10px 0;
+    padding: 10vh 10px 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @media(min-width: 768px) {
-        padding: 10vh 30px 0;
+        padding: 10vh 30px 15vh;
     }
     @media(min-width: 1024px) {
         flex-direction: row;
@@ -38,25 +38,22 @@
     @media(min-width: 1024px) {
         width: 80%;
         margin: 20px 50px;
-        text-align: left;
+        text-align: justify;
     }
 }
-
-.offer__illustration {
-    width: 100%;
-    text-align: center;
-    @media(min-width: 1024px) {
-        width: 50%;
-    }
+.offer__wrapper .text {
+    margin-top: 26px;
 }
 
-.illustration {
-    width: 60%;
-    margin: 40px 0 0;
-    @media(min-width: 768px) {
-        width: 50%;
-    }
-    @media(min-width: 1024px) {
-        width: 60%;
-    }
+.subtitleWD {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: text-animation 1s ease-out forwards;
+    animation-delay: 3.8s;
+}
+.textWD {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: text-animation 1s ease-out forwards;
+    animation-delay: 4.2s;
 }

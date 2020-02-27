@@ -79,111 +79,28 @@
     }
 }
 
+
 .icon-customers-path {
-    stroke-dasharray: 1150;
-    stroke-dashoffset: 1150;
-    animation: icon-customers-animation2 2s cubic-bezier(.06,.16,1,.21) forwards;
-}
-.icon-customers-path:nth-of-type(3),
-.icon-customers-path:nth-of-type(4) {
-    stroke-dasharray: 1150;
-    stroke-dashoffset: 1150;
-    animation: icon-customers-animation3 2s cubic-bezier(.06,.16,1,.21) forwards;
-}
-.icon-customers-path:nth-of-type(5),
-.icon-customers-path:nth-of-type(6) {
-    stroke-dasharray: 1150;
-    stroke-dashoffset: 1150;
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
     animation: icon-customers-animation 2s cubic-bezier(.06,.16,1,.21) forwards;
 }
+.icon-customers-path:nth-of-type(2) {
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: icon-customers-animation2 2s cubic-bezier(.06,.16,1,.21) forwards;
+}
+.icon-customers-path:nth-of-type(3) {
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: icon-customers-animation3 2s cubic-bezier(.06,.16,1,.21) forwards;
+}
+.icon-customers-path:nth-of-type(4) {
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: icon-customers-animation4 2s cubic-bezier(.06,.16,1,.21) forwards;
+}
 @keyframes icon-customers-animation {
-    0% {
-        fill: none;
-        stroke-dasharray: 1150;
-        stroke-dashoffset: 1150;
-    }
-
-    95% {
-        fill: rgba(255, 255, 255, 0);
-        stroke-dasharray: 1150;
-    }
-
-    100% {
-        fill: rgba(255, 255, 255, 1);
-        stroke-dasharray: 1150;
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes icon-customers-animation2 {
-    0% {
-        fill: none;
-        stroke-dasharray: 1150;
-        stroke-dashoffset: 1150;
-    }
-
-    20% {
-        fill: none;
-        stroke-dasharray: 1150;
-        stroke-dashoffset: 1150;
-    }
-
-    95% {
-        fill: rgba(255, 255, 255, 0);
-        stroke-dasharray: 1150;
-    }
-
-    100% {
-        fill: rgba(255, 255, 255, 1);
-        stroke-dasharray: 1150;
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes icon-customers-animation3 {
-    0% {
-        fill: none;
-        stroke-dasharray: 1150;
-        stroke-dashoffset: 1150;
-    }
-
-    40% {
-        fill: none;
-        stroke-dasharray: 1150;
-        stroke-dashoffset: 1150;
-    }
-
-    95% {
-        fill: rgba(255, 255, 255, 0);
-        stroke-dasharray: 1150;
-    }
-
-    100% {
-        fill: rgba(255, 255, 255, 1);
-        stroke-dasharray: 1150;
-        stroke-dashoffset: 0;
-    }
-}
-
-.icon-contact-path {
-    stroke-dasharray: 2300;
-    stroke-dashoffset: 2300;
-    animation: icon-contact-animation 2s cubic-bezier(.06,.16,1,.21) forwards;
-}
-.icon-contact-path:nth-of-type(2) {
-    stroke-dasharray: 2300;
-    stroke-dashoffset: 2300;
-    animation: icon-contact-animation2 2s cubic-bezier(.06,.16,1,.21) forwards;
-}
-.icon-contact-path:nth-of-type(3) {
-    stroke-dasharray: 2300;
-    stroke-dashoffset: 2300;
-    animation: icon-contact-animation3 2s cubic-bezier(.06,.16,1,.21) forwards;
-}
-.icon-contact-path:nth-of-type(4) {
-    stroke-dasharray: 2300;
-    stroke-dashoffset: 2300;
-    animation: icon-contact-animation4 2s cubic-bezier(.06,.16,1,.21) forwards;
-}
-@keyframes icon-contact-animation {
     0% {
         fill: none;
         stroke-dasharray: 2300;
@@ -201,7 +118,7 @@
         stroke-dashoffset: 0;
     }
 }
-@keyframes icon-contact-animation2 {
+@keyframes icon-customers-animation2 {
     0% {
         fill: none;
         stroke-dasharray: 2300;
@@ -225,7 +142,7 @@
         stroke-dashoffset: 0;
     }
 }
-@keyframes icon-contact-animation3 {
+@keyframes icon-customers-animation3 {
     0% {
         fill: none;
         stroke-dasharray: 2300;
@@ -249,7 +166,7 @@
         stroke-dashoffset: 0;
     }
 }
-@keyframes icon-contact-animation4 {
+@keyframes icon-customers-animation4 {
     0% {
         fill: none;
         stroke-dasharray: 2300;
@@ -271,5 +188,71 @@
         fill: rgba(255, 255, 255, 1);
         stroke-dasharray: 2300;
         stroke-dashoffset: 0;
+    }
+}
+
+
+.icon-contact-path {
+    stroke-width:10;
+    stroke-dasharray: 2100;
+    stroke-dashoffset: 2100;
+    animation: icon-contact-path-animation 1.4s cubic-bezier(.59,.04,.92,.79) forwards;
+}
+@keyframes icon-contact-path-animation {
+    0% {
+        // fill: none;
+        stroke-dasharray: 2100;
+        stroke-dashoffset: 2100;
+    }
+
+    // 95% {
+    //     fill: rgba(255, 255, 255, 0);
+    //     stroke-dasharray: 2100;
+    // }
+
+    100% {
+        // fill: rgba(255, 255, 255, 1);
+        stroke-dasharray: 2100;
+        stroke-dashoffset: 0;
+    }
+}
+.icon-contact-circle1,
+.icon-contact-circle2,
+.icon-contact-circle3 {
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:#FFFFFF;
+    transform: translateY(10%);
+    animation: icon-contact-circle-animation 1s linear forwards;
+    opacity: 0;
+}
+.icon-contact-circle1 {
+    animation-delay: 1s;
+}
+.icon-contact-circle3 {
+    animation-delay: 1.2s;
+}
+.icon-contact-circle2 {
+    animation-delay: 1.4s;
+}
+
+@keyframes icon-contact-circle-animation {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    50% {
+        transform: translateY(-10%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

@@ -1,0 +1,106 @@
+.customers-header {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-image: url('../images/bg-images/bg1.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // z-index: -2;
+    background-color: rgba(255, 255, 255, 0.3);
+    @media (max-width: 830px) and (orientation: landscape) {
+        min-height: 140vh;
+    }
+    // &::after {
+    //     position: absolute;
+    //     display: block;
+    //     content: '';
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     background-color: rgba(255, 255, 255, 0.3);
+    //     z-index: -1;
+    // }
+}
+
+.customers-title,
+.customers-text {
+    @media(min-width: 600px) {
+        width: 80%;
+    }
+    @media(min-width: 768px) {
+        width: 70%;
+    }
+    @media(min-width: 1024px) {
+        width: 50%;
+    }
+}
+
+.customers-title {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: text-animation 1s ease-out forwards;
+    animation-delay: 3.8s;
+}
+
+.customers-text {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: text-animation 1s ease-out forwards;
+    animation-delay: 4.2s;
+}
+
+.realizations-list {
+    max-width: 1280px;
+    margin: 50px auto 100px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.realizations-title {
+    width: 100%;
+    margin: 20px auto;
+    @media (min-width: 1024px) {
+        margin: 40px auto 60px;
+    }
+}
+
+.realization {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 40px 0;
+    @media (min-width: 1024px) {
+        width: 48%;
+    }
+    &__img {
+        margin-bottom: 20px;
+    }
+    &__link {
+        text-transform: uppercase;
+        padding: 4px 10px;
+        font-weight: normal;
+    }
+}
+
+.realization-osap {
+    .realization__img {
+        @media (min-width: 1024px) {
+            width: 70%;
+        }
+    }
+}

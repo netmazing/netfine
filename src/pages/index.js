@@ -40,7 +40,7 @@ const IndexPage = () => {
               <h2 className="section__title subtitle">Skuteczna reklama w sieci</h2>
             </Fade>
             <Fade bottom>
-              <p className="text">Uwielbiamy tworzyć piękne rzeczy. Niezależnie od tego, czy potrzebujesz funkcjonalnego sklepu internetowego, rozbudowanej platformy czy minimalistycznej wizytówki, poruszymy niebo i piekło, żeby spełnić Twoje oczekiwania.</p>
+              <p className="text">Uwielbiamy tworzyć piękne rzeczy. Niezależnie od tego, czy potrzebujesz funkcjonalnego sklepu internetowego, rozbudowanej platformy czy minimalistycznej wizytówki, zrobimy wszystko, żeby spełnić Twoje oczekiwania.</p>
             </Fade>
             <Fade bottom>
                 <AniLink

@@ -1,15 +1,16 @@
 @import './variables.scss';
 
 .contact-page {
+    min-height: 100vh;
     margin: 0 auto;
-    padding: 20vh 10px 2vh;
+    padding: 20vh 10px 20vh;
     max-width: 1280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @media(min-width: 768px) {
-        padding: 20vh 30px 2vh;
+        padding: 20vh 0px 20vh;
     }
     @media(min-width: 1024px) {
         flex-direction: row;
@@ -51,24 +52,11 @@
     animation-delay: 4.2s;
 }
 
-// .contact-text {
-//     transform: translateY(100%);
-//     opacity: 0;
-//     animation: text-animation 1s ease-out forwards;
-//     animation-delay: 4.2s;
-// }
-
 .contact-subtitle {
     text-align: center;
     line-height: 1.2;
     font-size: 20px;
     margin-top: 40px;
-    // text-transform: uppercase;
-    // span {
-    //     display: block;
-    //     font-size: 18px;
-    //     text-transform: capitalize;
-    // }
 }
 
 .contact-box {
@@ -104,12 +92,5 @@
                 text-align: left;
             }
         }
-    }
-}
-
-.contact-link {
-    transition: color .3s;
-    &:hover {
-        color: $primary-color;
     }
 }

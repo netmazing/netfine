@@ -25,3 +25,37 @@
         transform: translateX(0);
     }
 }
+
+@keyframes arrow-down-animation {
+    0% {
+        transform: translateY(-50%) rotate(180deg);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(-50%) rotate(180deg);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(0) rotate(180deg);
+        opacity: 1;
+    }
+
+    75%{
+        transform: translateY(0) rotate(180deg);
+        opacity: 1;
+    }
+
+
+    90% {
+        transform: translateY(50%) rotate(180deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(50%) rotate(180deg);
+        opacity: 0;
+    }
+}
+

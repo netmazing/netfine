@@ -55,7 +55,7 @@
 .hero__title {
     margin-top: 40px;
     transform: translateY(50%);
-    transform-origin: bottom;
+    // transform-origin: bottom;
     opacity: 0;
     animation: text-animation 1s ease-out forwards;
     animation-delay: 4.4s;

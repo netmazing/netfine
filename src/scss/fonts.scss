@@ -36,15 +36,11 @@ a {
 }
 
 .hero__title {
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 1.2;
-    text-align: center;
     text-transform: uppercase;
-    margin: 20px 10px;
-    @media(min-width: 600px) {
-        font-size: 40px;
-    }
+}
+
+.portfolio-title {
+    font-size: 30px;
 }
 
 .subtitle {
@@ -65,5 +61,15 @@ a {
     margin: 0 20px;
     @media(min-width: 600px) {
         font-size: 18px;
+    }
+}
+
+.change-language,
+.portfolio-link,
+.contact-link,
+.realization__link {
+    transition: color .3s;
+    &:hover {
+        color: $primary-color;
     }
 }

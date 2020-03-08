@@ -10,46 +10,21 @@
     transform: rotate(180deg);
 }
 
-.hero .arrow-down {
+.hero .arrow-down,
+.customers-header .arrow-down {
     margin-top: 20px;
     transform: translateY(-50%) rotate(180deg);
     opacity: 0;
-    animation: hero-arrow-animation 3s infinite;
-    animation-delay: 5.2s;
+    animation: arrow-down-animation 3s infinite;
     @media(min-width: 360px) {
         margin-top: 40px;
     }
 }
 
-@keyframes hero-arrow-animation {
-    0% {
-        transform: translateY(-50%) rotate(180deg);
-        opacity: 0;
-    }
+.hero .arrow-down {
+    animation-delay: 5.2s;
+}
 
-    10% {
-        transform: translateY(-50%) rotate(180deg);
-        opacity: 0;
-    }
-
-    25% {
-        transform: translateY(0) rotate(180deg);
-        opacity: 1;
-    }
-
-    75%{
-        transform: translateY(0) rotate(180deg);
-        opacity: 1;
-    }
-
-
-    90% {
-        transform: translateY(50%) rotate(180deg);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(50%) rotate(180deg);
-        opacity: 0;
-    }
+.customers-header .arrow-down {
+    animation-delay: 4.8s;
 }

@@ -4,16 +4,20 @@
     padding: 10vh 0 10vh 0;
     margin: 0 auto;
     max-width: 1280px;
+    @media (min-width: 1024px) {
+        padding: 0;
+    }
 }
 
 .offer {
+    min-height: 100vh;
     padding: 10vh 10px 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @media(min-width: 768px) {
-        padding: 10vh 30px 15vh;
+        padding: 10vh 0px 10vh;
     }
     @media(min-width: 1024px) {
         flex-direction: row;

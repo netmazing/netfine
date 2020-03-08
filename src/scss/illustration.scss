@@ -1,5 +1,6 @@
 .offer__illustration,
-.contact-page__illustration {
+.contact-page__illustration,
+.portfolio-page__illustration {
     width: 100%;
     text-align: center;
     @media(min-width: 1024px) {
@@ -23,5 +24,5 @@
     transform: translateX(120%);
     opacity: 0;
     animation: illustration-animation 1s ease-out forwards;
-    animation-delay: 3.8s;
+    animation-delay: 4.6s;
 }

@@ -10,8 +10,11 @@ import IllustrationMarketing from '../svg/illustration-marketing.svg';
 
 import Fade from 'react-reveal/Fade';
 
+import SEO from '../components/SEO';
+
 const Offer = () => (
   <Layout>
+    <SEO siteTitle="Oferta" siteDesc="Oferujemy strony www, sklepy internetowe, projekty logo i materiały promocyjne, reklamę w sieci."/>
     <LoaderOffer/>
     <main className="page offer-page">
       <h1 className="hidden">Oferta</h1>

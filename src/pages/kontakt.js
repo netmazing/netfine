@@ -6,8 +6,11 @@ import IllustrationContact from '../svg/illustration-contact.svg';
 import '../scss/contact.scss';
 import '../scss/internal-loader.scss';
 
+import SEO from '../components/SEO';
+
 const ContactPage = () => (
   <Layout>
+    <SEO siteTitle="Kontakt" />
       <LoaderContact/>
       <main className="page contact-page">
         <div className="contact-page__wrapper">

@@ -3,6 +3,8 @@ module.exports = {
     title: `Netfine Agencja Interaktywna`,
     description: `Stworzymy dla Ciebie stronę internetową, zaprojektujemy logo, przygotujemy kampanię marketingową. Z przyjemnością zadbamy o Twoj wizerunek w sieci.`,
     author: `Netfine`,
+    siteUrl: 'https://www.netfine.pl/',
+    image: '/netfine.jpg'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

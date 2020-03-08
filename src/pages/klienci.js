@@ -18,12 +18,15 @@ import OSAPMockup from '../svg/osap-mockup.svg';
 import KeepTheBeatMockup from '../svg/keepthebeat-mockup.svg';
 import AkcjaSerduchoMockup from '../svg/akcjaserducho-mockup.svg';
 
+import SEO from '../components/SEO';
+
 const CustomersPage = () => {
   // const transtionTime = 1.5;
   // const firstRealization = realizations[0];
   // const {path, bgColor} = firstRealization;
   return (
     <Layout>
+      <SEO siteTitle="Klienci" siteDesc="Zależy nam, by nasze realizacje były użyteczne, funkcjonalne i piękne. Klientów i projekty traktujemy indywidualnie."/>
       <LoaderCustomers/>
       <main className="page customers-page">
         <Parallax bgImage={Img1} strength={500}>

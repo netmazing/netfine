@@ -16,11 +16,14 @@ import Img4 from '../images/bg-images/bg4.jpg';
 import ArrowDown from '../svg/arrow-down.svg';
 import ArrowRight from '../svg/arrow-right.svg';
 
+import SEO from '../components/SEO';
+
 
 const IndexPage = () => {
   const transtionTime = 1.5;
   return (
     <Layout>
+      <SEO/>
 
       <Loader/>
       

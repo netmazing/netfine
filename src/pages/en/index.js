@@ -110,7 +110,6 @@ const IndexPageEn = () => {
         </Parallax>
 
        </main>
-       
     </LayoutEn>
 )}
 

@@ -67,7 +67,7 @@ const IndexPageEn = () => {
               <h2 className="section__title subtitle">Experience</h2>
             </Fade>
             <Fade bottom>
-                <p className="text">Your requirements are our challenges. We have an individual approach to the client and we enjoy the fruits of each project.</p>
+                <p className="text">Your requirements are our challenges. We have an individual approach to the client and we're glad to be a part of your project.</p>
             </Fade>
             <Fade bottom>
                 <AniLink

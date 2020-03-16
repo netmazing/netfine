@@ -33,7 +33,7 @@ const CustomersPage = () => {
           <header className="customers-header">
             <h1 className="title customers-title">Wizja i podejście</h1>
             <p className="text customers-text">Zależy nam, by nasze realizacje były użyteczne, funkcjonalne i piękne. Zadowolenie klienta ze współpracy jest dla nas kluczowe, dlatego z dumą prezentujemy nasze wybrane projekty.</p>
-            <img className="arrow-down" src={ArrowDown} alt="czytaj dalej o Agencji Interaktywnej Netfine"/>
+            <img className="arrow-down" src={ArrowDown} alt="Zobacz realizacje Netfine"/>
           </header>
         </Parallax>
 

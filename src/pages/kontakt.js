@@ -15,7 +15,6 @@ const ContactPage = () => (
       <main className="page contact-page">
         <div className="contact-page__wrapper">
           <h1 className="title contact-title">W czym możemy Ci pomóc?</h1>
-          {/* <p className="text contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consectetur molestiae optio, ratione adipisci rerum nobis earum quam doloribus repellendus?</p> */}
 
           <section className="contact">
             <h2 className="contact-subtitle">Netfine <span>Agencja Interaktywna</span></h2>

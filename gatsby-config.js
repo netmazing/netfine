@@ -18,6 +18,13 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-transition-link`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-161911946-1",
+      },
+    },
+    {
       resolve: 'gatsby-plugin-page-progress',
       options: {
         includePaths: [],

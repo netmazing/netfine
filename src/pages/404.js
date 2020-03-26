@@ -15,7 +15,7 @@ const NotFoundPage = () => (
           <p className-="text">Nie ma takiej strony</p>
           <AniLink
           cover
-          to="/oferta"
+          to="/"
           direction="left"
           duration="1.5"
           bg='#000'

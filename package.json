@@ -6,7 +6,7 @@
   "author": "Paweł Trojnacki <info@netfine.pl>",
   "dependencies": {
     "@svgdotjs/svg.js": "^3.0.16",
-    "gatsby": "^2.20.7",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-google-analytics": "^2.2.2",
     "gatsby-plugin-manifest": "^2.3.3",
